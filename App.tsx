@@ -2,20 +2,20 @@ import React from 'react'
 import {
   View,
   Text,
-  SafeAreaView
+  SafeAreaView,
+  ScrollView
 } from 'react-native'
+import FlatCards from './components/FlatCards';
 
-function App() {
+const App = () => {
   return (
     <SafeAreaView>
-      <View>
-        <Text>
-          Hello World!
-        </Text>
-      </View>
+      <ScrollView>
+        <Text>App</Text>
+        <FlatCards />
+      </ScrollView>
     </SafeAreaView>
   )
-
 }
 
 export default App;
